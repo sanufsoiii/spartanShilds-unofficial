@@ -56,3 +56,12 @@ subprojects {
         options.compilerArgs << "-Xmaxerrs" << "5000"
     }
 }
+
+// Ship the Apache 2.0 license inside every jar (common resources are shaded into the loader jars).
+project(":common") {
+    processResources {
+        from(rootProject.file("LICENSE")) {
+            rename { "LICENSE_spartanshields" }
+        }
+    }
+}
