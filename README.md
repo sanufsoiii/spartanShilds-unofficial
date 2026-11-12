@@ -24,7 +24,8 @@ One branch per Minecraft version (`1.20` … `1.21.11`). Each branch is an Archi
 ```
 common/    shared code
 fabric/    Fabric build
-neoforge/  NeoForge build (Forge build on 1.20 – 1.20.4 branches)
+forge/     Forge build (branches 1.20 – 1.20.4)
+neoforge/  NeoForge build (branches 1.20.2, 1.20.4 and newer)
 ```
 
 ```bash
